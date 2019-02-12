@@ -1,0 +1,45 @@
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Register</h4>
+  <hr />
+	<form>
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Nickname" type="text" autocomplete="off">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Email" type="email" autocomplete="off">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group">
+			<input type="checkbox" id="data" name="data">
+			<label for="data" class="ml-1">I Agree to the Personal Data Consent</label>
+		</div>
+    <div class="form-group">
+      <input type="checkbox" id="terms" name="terms">
+      <label for="terms" class="ml-1">I Agree to the Terms of Use & Privacy Policy</label>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+    </div> <!-- form-group// -->
+    <p class="text-center">Have an account? <a [routerLink]="['/login']">Log-in</a> </p>
+
+</form>
+</article>
+</div>

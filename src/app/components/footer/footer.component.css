@@ -1,0 +1,20 @@
+.blue{
+  background-color: #0099CC;
+}
+.blue-dark{
+ background-color: #007bff;
+}
+footer{
+  color:white;
+}
+@media (min-width: 576px){
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+}
+a, a:hover{
+  color: white;
+  text-decoration: none;
+}

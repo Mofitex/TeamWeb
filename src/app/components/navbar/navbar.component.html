@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['home']"><img src="../../../assets/img/logo.png" alt="" width="40px" height="40px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['home']">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          League of Legends
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a class="dropdown-item" [routerLink]="['lol','players']">Players</a>
+          <a class="dropdown-item" [routerLink]="['lol','teams']">Teams</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Overwatch
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+          <a class="dropdown-item" [routerLink]="['ow','players']">Players</a>
+          <a class="dropdown-item" [routerLink]="['ow','teams']">Teams</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-5" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav" style="margin-right:5%;">
+      <li>
+        <button class="btn btn-primary mr-3 my-2 my-lg-0" [routerLink]="['login']">Log-in</button>
+      </li>
+      <li>
+        <button class="btn btn-primary my-2 my-lg-0" [routerLink]="['register']">Register</button>
+      </li>
+    </ul>
+  </div>
+</nav>
